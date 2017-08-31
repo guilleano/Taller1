@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.redes.empresa_xyz.principal">
+
+    <LinearLayout
+        android:layout_width="427dp"
+        android:layout_height="138dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp">
+
+        <Spinner
+            android:id="@+id/cmbmaterial"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04" />
+
+        <Spinner
+            android:id="@+id/cmbdije"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16" />
+
+        <Spinner
+            android:id="@+id/cmbtipo"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="284dp"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="177dp">
+
+        <TextView
+            android:id="@+id/txtTipoMoneda"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="Tipo de Moneda"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="284dp" />
+
+        <Spinner
+            android:id="@+id/cmbTipoMoneda"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="204dp"
+            android:layout_weight="0.07" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/txtmaterial"
+            android:layout_width="124dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.50"
+            android:text="Material"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <TextView
+            android:id="@+id/txtDije"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Dije"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <TextView
+            android:id="@+id/txtTipo"
+            android:layout_width="127dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Tipo"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="255dp"
+            tools:layout_editor_absoluteY="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="299dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="435dp">
+
+        <EditText
+            android:id="@+id/lblValorManilla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/valorManilla"
+            android:inputType="textPersonName"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="452dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="164dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="259dp">
+
+        <EditText
+            android:id="@+id/txtcantidadManillas"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:hint="@string/cantidadManillas"
+            android:inputType="textPersonName"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="437dp" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calcular"
+            android:text="@string/calcular"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="borrar"
+            android:text="@string/borrar"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="265dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
